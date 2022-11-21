@@ -1,0 +1,49 @@
+{
+    "name": "tasabina/3d-tutorial",
+    "description": "3D project on Silverstripe CMS platform",
+    "type": "project",
+    "license": "BSD 3-Clause License",
+    "autoload": {
+        "psr-4": {
+            "Tasabina\\3dTutorial\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sabina Talipova"
+        }
+    ],
+    "prefer-stable": true,
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^8.1",
+        "silverstripe/recipe-cms": "^5",
+        "silverstripe/siteconfig": "^5",
+        "silverstripe/login-forms": "^5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true,
+            "silverstripe/recipe-plugin": true,
+            "silverstripe/vendor-plugin": true
+        }
+    },
+    "extra": {
+        "project-files-installed": [
+            "app/.htaccess",
+            "app/_config.php",
+            "app/_config/mimevalidator.yml",
+            "app/_config/mysite.yml",
+            "app/src/Page.php",
+            "app/src/PageController.php"
+        ],
+        "public-files-installed": [
+            ".htaccess",
+            "index.php",
+            "web.config"
+        ]
+    }
+}
